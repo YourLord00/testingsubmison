@@ -107,6 +107,7 @@ public class BinaryTreeSerializerTest {
         root.right.right = new TreeNode(6);
         String ret = bs.serialize(root);
         assertEquals("[0,1,2,3,4,5,6,null,null,null,null,null,null,null,null]",ret);
+        
     }
     
     @Test

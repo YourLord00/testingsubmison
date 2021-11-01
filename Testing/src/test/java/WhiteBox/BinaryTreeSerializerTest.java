@@ -114,7 +114,6 @@ public class BinaryTreeSerializerTest {
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
         String str = "[0,1,2,3,4,5,6,null,null,null,null,null,null,null,null]";
         
-        
         TreeNode root = new TreeNode(0);
         root.left = new TreeNode(1);
         root.right = new TreeNode(2);

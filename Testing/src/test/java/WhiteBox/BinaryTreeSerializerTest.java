@@ -110,6 +110,7 @@ public class BinaryTreeSerializerTest {
         
     }
     
+    
     @Test
     public void deserializeTest4(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();

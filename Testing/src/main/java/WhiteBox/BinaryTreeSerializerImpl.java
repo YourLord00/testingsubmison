@@ -72,5 +72,6 @@ public class BinaryTreeSerializerImpl implements BinaryTreeSerializer {
         if (s.charAt(0) == 'n') return null;
         return new TreeNode(Integer.parseInt(s));
     }
+
 }
 

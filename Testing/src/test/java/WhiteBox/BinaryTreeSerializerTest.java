@@ -30,7 +30,6 @@ public class BinaryTreeSerializerTest {
 
     //@TODO: Create more tests
     //try update
-    
     @Test
     public void serializeStringTest(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();

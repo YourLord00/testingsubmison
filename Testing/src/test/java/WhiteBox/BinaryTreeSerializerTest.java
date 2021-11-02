@@ -33,6 +33,7 @@ public class BinaryTreeSerializerTest {
     //try update
 
     ///11112331
+    //test f4om
     @Test
     public void serializeStringTest(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
@@ -40,7 +41,8 @@ public class BinaryTreeSerializerTest {
         TreeNode root = bs.deserialize(str);
         assertEquals(null ,root);
     }
-    
+
+
     @Test
     public void deserializeTest2(){
         //@TODO: Delete/modify me
@@ -109,12 +111,7 @@ public class BinaryTreeSerializerTest {
     }
     
     
-<<<<<<< HEAD
-    
-    
-    
-=======
->>>>>>> branch 'main' of https://github.com/YourLord00/testingsubmison.git
+
     @Test
     public void deserializeTest4(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
@@ -130,6 +127,7 @@ public class BinaryTreeSerializerTest {
         root.right.right = new TreeNode(6);
         TreeNode ret = bs.deserialize(str);
         assertEquals(root,ret);
+
     }
     
     

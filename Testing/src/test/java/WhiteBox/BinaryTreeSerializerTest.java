@@ -32,7 +32,7 @@ public class BinaryTreeSerializerTest {
     //@TODO: Create more tests
     //try update
 
-    ///1111
+    ///11112331
     @Test
     public void serializeStringTest(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();

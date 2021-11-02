@@ -31,11 +31,7 @@ public class BinaryTreeSerializerTest {
 
     //@TODO: Create more tests
     //try update
-    
-    
-    
-    
-    
+
     @Test
     public void serializeStringTest(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
@@ -112,9 +108,12 @@ public class BinaryTreeSerializerTest {
     }
     
     
+<<<<<<< HEAD
     
     
     
+=======
+>>>>>>> branch 'main' of https://github.com/YourLord00/testingsubmison.git
     @Test
     public void deserializeTest4(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();

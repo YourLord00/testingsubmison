@@ -7,6 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
+
 public class BinaryTreeSerializerTest {
 
     @Test
@@ -31,6 +32,7 @@ public class BinaryTreeSerializerTest {
     //@TODO: Create more tests
     //try update
 
+    ///11112331
     @Test
     public void serializeStringTest(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
@@ -107,6 +109,12 @@ public class BinaryTreeSerializerTest {
     }
     
     
+<<<<<<< HEAD
+    
+    
+    
+=======
+>>>>>>> branch 'main' of https://github.com/YourLord00/testingsubmison.git
     @Test
     public void deserializeTest4(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();

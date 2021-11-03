@@ -129,6 +129,19 @@ public class BinaryTreeSerializerTest {
         assertEquals(root,ret);
 
     }
+
+    @Test
+    public void deserializeTestlevelsize0addOns(){
+        BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
+        String str = "[null]";
+
+
+        TreeNode root = null;
+
+        TreeNode ret = bs.deserialize(str);
+        assertEquals(root,ret);
+
+    }
     
     
 }

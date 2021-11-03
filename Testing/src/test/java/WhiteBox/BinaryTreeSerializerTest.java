@@ -141,19 +141,21 @@ public class BinaryTreeSerializerTest {
     }
 
     @Test
+    public void deserializeTest7(){
+        BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
+        String str ="[1,,]";
+        TreeNode root = new TreeNode(1);
+        TreeNode ret = bs.deserialize(str);
+        assertEquals(root,ret);
+    }
+
+    @Test
     public void deserializeTestnullagain(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
-        String str ="[1,null,null]";
-
+        String str ="[1,null,null,2,3,null,null,null,null]";
         TreeNode root = new TreeNode(1);
         root.left = null;
         root.right = null;
-//        root.left.left = new TreeNode(2);
-//        root.left.right = new TreeNode(3);
-//        root.left.left.left=null;
-//        root.left.left.right=null;
-//        root.left.right.left=null;
-//        root.left.right.right=null;
         TreeNode ret = bs.deserialize(str);
         assertEquals(root,ret);
     }

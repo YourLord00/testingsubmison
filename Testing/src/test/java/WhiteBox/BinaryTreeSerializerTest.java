@@ -2,6 +2,7 @@ package WhiteBox;
 
 import BlackBox.CycleSort;
 import Utils.TreeNode;
+import com.sun.source.tree.Tree;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -129,14 +130,30 @@ public class BinaryTreeSerializerTest {
         assertEquals(root,ret);
 
     }
-    //try pull if work
-    //git repo update
 
     @Test
     public void deserializeTestlevelsize0addOns(){
         BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
         String str = "[null]";
         TreeNode root = null;
+        TreeNode ret = bs.deserialize(str);
+        assertEquals(root,ret);
+    }
+
+    @Test
+    public void deserializeTestnullagain(){
+        BinaryTreeSerializer bs = new BinaryTreeSerializerImpl();
+        String str ="[1,null,null]";
+
+        TreeNode root = new TreeNode(1);
+        root.left = null;
+        root.right = null;
+//        root.left.left = new TreeNode(2);
+//        root.left.right = new TreeNode(3);
+//        root.left.left.left=null;
+//        root.left.left.right=null;
+//        root.left.right.left=null;
+//        root.left.right.right=null;
         TreeNode ret = bs.deserialize(str);
         assertEquals(root,ret);
     }
